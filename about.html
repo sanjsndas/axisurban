@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>About — Axis Urban Elements | Interior Design & Architecture Journal</title>
+  <meta name="description" content="Axis Urban Elements is an independent editorial publication covering interior design, architecture, and the built environment. Meet our team and learn about our mission.">
+  <meta name="author" content="Axis Urban Elements">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://axisurbanelements.com/about.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="About — Axis Urban Elements">
+  <meta property="og:description" content="An independent editorial publication covering interior design, architecture, and the built environment.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://axisurbanelements.com/about.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root {
+      --bg: #fcfaf7;
+      --surface: #ffffff;
+      --text-primary: #1e1e1e;
+      --text-secondary: #4a4a4a;
+      --text-muted: #6b6b6b;
+      --border: #e2ddd5;
+      --accent: #b85e3a;
+      --accent-light: #f4ede7;
+      --accent-hover: #9c4a2b;
+      --font-serif: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1280px;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.03);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.05);
+      --radius: 8px;
+      --radius-lg: 16px;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    button, input, select {
+      font: inherit;
+    }
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4, h5 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+    h1 { font-size: 2.6rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.2rem; }
+    .text-sm { font-size: 0.875rem; }
+    .text-xs { font-size: 0.75rem; }
+    .text-muted { color: var(--text-muted); }
+    .text-secondary { color: var(--text-secondary); }
+    .uppercase { text-transform: uppercase; letter-spacing: 0.06em; }
+    .serif { font-family: var(--font-serif); }
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    /* ---------- HEADER ---------- */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: var(--font-serif);
+      font-size: 1.7rem;
+      letter-spacing: -0.02em;
+      line-height: 1;
+    }
+    .logo-mark {
+      width: 36px;
+      height: 36px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 400;
+    }
+    .logo span {
+      font-weight: 400;
+      color: var(--text-primary);
+    }
+    .logo .light {
+      font-weight: 300;
+      color: var(--text-muted);
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem 1.2rem;
+      align-items: center;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      padding: 0.25rem 0;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.15s, color 0.15s;
+      white-space: nowrap;
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--text-primary);
+      border-bottom-color: var(--accent);
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .search-btn {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 0.35rem 0.9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .search-btn:hover {
+      border-color: var(--accent);
+      color: var(--text-primary);
+    }
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.3rem 0.7rem;
+      cursor: pointer;
+      font-size: 1.2rem;
+      color: var(--text-primary);
+    }
+    @media (max-width: 900px) {
+      .header-inner {
+        padding: 0.8rem 1.2rem;
+      }
+      .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem 0 0.8rem;
+        gap: 0.4rem;
+        border-top: 1px solid var(--border);
+        margin-top: 0.5rem;
+      }
+      .nav-links.open {
+        display: flex;
+      }
+      .nav-links a {
+        font-size: 1rem;
+        padding: 0.3rem 0;
+      }
+      .mobile-toggle {
+        display: block;
+      }
+      .search-btn span {
+        display: none;
+      }
+      .search-btn {
+        padding: 0.35rem 0.7rem;
+      }
+    }
+    /* ---------- SEARCH BAR ---------- */
+    .search-bar {
+      display: none;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.5rem;
+    }
+    .search-bar.open {
+      display: block;
+    }
+    .search-bar-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      gap: 0.8rem;
+      align-items: center;
+    }
+    .search-bar input {
+      flex: 1;
+      padding: 0.8rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 40px;
+      background: var(--bg);
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .search-bar input:focus {
+      border-color: var(--accent);
+    }
+    .search-bar .close-search {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--text-muted);
+      line-height: 1;
+      padding: 0 0.3rem;
+    }
+    /* ---------- ABOUT PAGE SPECIFIC ---------- */
+    .about-hero {
+      padding: 3rem 0 2rem;
+    }
+    .about-hero h1 {
+      font-size: 3.2rem;
+      max-width: 800px;
+      margin-bottom: 1rem;
+      line-height: 1.15;
+    }
+    .about-hero .lead {
+      font-size: 1.25rem;
+      color: var(--text-secondary);
+      max-width: 720px;
+      line-height: 1.7;
+      font-family: var(--font-serif);
+      font-style: italic;
+    }
+    .about-intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      padding: 2rem 0 3rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .about-intro-img {
+      width: 100%;
+      height: 100%;
+      min-height: 320px;
+      object-fit: cover;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+    }
+    .about-intro-text p {
+      margin-bottom: 1.2rem;
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      line-height: 1.75;
+    }
+    @media (max-width: 768px) {
+      .about-intro {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .about-hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+    .mission-section {
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .mission-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 700px) {
+      .mission-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+    .mission-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.8rem 1.5rem;
+      transition: box-shadow 0.2s;
+    }
+    .mission-card:hover {
+      box-shadow: var(--shadow-sm);
+    }
+    .mission-card .icon {
+      font-size: 2rem;
+      line-height: 1;
+      margin-bottom: 0.8rem;
+      display: block;
+      color: var(--accent);
+    }
+    .mission-card h3 {
+      font-family: var(--font-sans);
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .mission-card p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+    .team-section {
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 700px) {
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .team-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.8rem 1.5rem;
+      text-align: center;
+      transition: box-shadow 0.2s;
+    }
+    .team-card:hover {
+      box-shadow: var(--shadow-sm);
+    }
+    .team-avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 1rem;
+      background: #d9d2c8;
+      border: 2px solid var(--accent-light);
+    }
+    .team-card h3 {
+      font-family: var(--font-sans);
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 0.2rem;
+    }
+    .team-card .role {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+    .team-card p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .values-section {
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .values-list {
+      list-style: none;
+      margin-top: 1.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem 3rem;
+    }
+    @media (max-width: 600px) {
+      .values-list {
+        grid-template-columns: 1fr;
+      }
+    }
+    .values-list li {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+    .values-list li .num {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      color: var(--accent);
+      line-height: 1;
+      min-width: 1.8rem;
+    }
+    .about-cta {
+      padding: 3rem 0;
+      text-align: center;
+    }
+    .about-cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .about-cta p {
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 0.8rem 2rem;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: background 0.15s;
+      border: none;
+      cursor: pointer;
+    }
+    .cta-btn:hover {
+      background: var(--accent-hover);
+    }
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: #1e1c1a;
+      color: #d9d2c8;
+      padding: 3rem 0 2rem;
+      margin-top: 2rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+    }
+    @media (max-width: 800px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width: 500px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .footer-brand .logo {
+      color: #fff;
+      margin-bottom: 0.8rem;
+    }
+    .footer-brand p {
+      font-size: 0.85rem;
+      line-height: 1.7;
+      color: #a89f94;
+      max-width: 320px;
+    }
+    .footer-col h4 {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .footer-col a {
+      font-size: 0.85rem;
+      color: #a89f94;
+      transition: color 0.15s;
+    }
+    .footer-col a:hover {
+      color: #fff;
+    }
+    .footer-bottom {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #3a3734;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      font-size: 0.8rem;
+      color: #7a746c;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Axis Urban Elements home">
+        <span class="logo-mark" aria-hidden="true">◈</span>
+        <span>Axis<span class="light">Urban Elements</span></span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="search-btn" id="searchToggle" aria-label="Open search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span>Search</span>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+    <div class="search-bar" id="searchBar">
+      <div class="search-bar-inner">
+        <input type="text" id="searchInput" placeholder="Search articles, topics, materials…" aria-label="Search articles">
+        <button class="close-search" id="closeSearch" aria-label="Close search">×</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ========== ABOUT HERO ========== -->
+    <section class="about-hero">
+      <h1>Design is a way of thinking, not just a way of decorating.</h1>
+      <p class="lead">Axis Urban Elements is an independent journal for people who believe the built environment shapes how we live, feel, and connect.</p>
+    </section>
+
+    <!-- ========== INTRO WITH IMAGE ========== -->
+    <section class="about-intro">
+      <img 
+        src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200&auto=format&fit=crop" 
+        alt="Open-plan interior with natural light, timber floors, and considered furniture placement" 
+        class="about-intro-img"
+        loading="eager"
+      >
+      <div class="about-intro-text">
+        <p>Founded in 2018, Axis Urban Elements began as a small newsletter for architects and designers who wanted more than glossy images. They wanted context: why a material works, how a plan flows, what makes a room feel right.</p>
+        <p>Today, we publish in-depth articles, practical guides, and critical perspectives on interior design, architecture, materials, lighting, and the spaces in between. Our readers include design professionals, students, and anyone who cares deeply about the places they inhabit.</p>
+        <p>We are reader-supported and editorially independent. We do not accept sponsored content. Every article is researched, written, and edited with care — because good design writing should be as considered as good design itself.</p>
+      </div>
+    </section>
+
+    <!-- ========== MISSION ========== -->
+    <section class="mission-section">
+      <h2>What we stand for</h2>
+      <div class="mission-grid">
+        <div class="mission-card">
+          <span class="icon">◈</span>
+          <h3>Depth over trend</h3>
+          <p>We avoid fleeting fads. Instead, we explore the principles, materials, and ideas that make spaces endure — and explain the "why" behind the "what."</p>
+        </div>
+        <div class="mission-card">
+          <span class="icon">◈</span>
+          <h3>Independent voice</h3>
+          <p>No sponsored posts, no pay-to-play. Our only obligation is to our readers and to honest, thoughtful criticism of the built environment.</p>
+        </div>
+        <div class="mission-card">
+          <span class="icon">◈</span>
+          <h3>Practical & poetic</h3>
+          <p>We balance the technical with the tactile — from specification details and lighting calculations to the quiet feeling of a well-proportioned room.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TEAM ========== -->
+    <section class="team-section">
+      <h2>The people behind the pages</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop" alt="Portrait of Elena Marsh" class="team-avatar" loading="lazy">
+          <h3>Elena Marsh</h3>
+          <div class="role">Editor-in-Chief</div>
+          <p>Architect and writer. Formerly at Studio Praline, Milan. Elena leads editorial direction and writes on material culture and spatial theory.</p>
+        </div>
+        <div class="team-card">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" alt="Portrait of Julian Reyes" class="team-avatar" loading="lazy">
+          <h3>Julian Reyes</h3>
+          <div class="role">Senior Editor, Architecture</div>
+          <p>Registered architect with a focus on adaptive reuse and passive design. Julian covers residential architecture and urbanism.</p>
+        </div>
+        <div class="team-card">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop" alt="Portrait of Mira Chen" class="team-avatar" loading="lazy">
+          <h3>Mira Chen</h3>
+          <div class="role">Contributing Editor, Interiors</div>
+          <p>Interior designer and stylist. Mira writes about lighting, textiles, and the details that make a house feel like a home.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== VALUES ========== -->
+    <section class="values-section">
+      <h2>Our editorial values</h2>
+      <ul class="values-list">
+        <li><span class="num">01</span> <span><strong>Accuracy first.</strong> We verify facts, dimensions, and material claims. If we make a mistake, we correct it promptly and transparently.</span></li>
+        <li><span class="num">02</span> <span><strong>Reader trust.</strong> We don't sell email lists, run intrusive ads, or compromise reading experience for revenue.</span></li>
+        <li><span class="num">03</span> <span><strong>Inclusive design.</strong> We believe good design serves everyone — across cultures, abilities, and budgets. Our coverage reflects that.</span></li>
+        <li><span class="num">04</span> <span><strong>Sustainability matters.</strong> We prioritize low-impact materials, passive strategies, and long-life thinking in every article we publish.</span></li>
+        <li><span class="num">05</span> <span><strong>Clarity over jargon.</strong> Whether you're a professional or an enthusiast, our writing should be accessible without being simplistic.</span></li>
+        <li><span class="num">06</span> <span><strong>Beauty with purpose.</strong> We celebrate visual pleasure, but always in service of how a space functions and feels.</span></li>
+      </ul>
+    </section>
+
+    <!-- ========== CTA / CONTACT ========== -->
+    <section class="about-cta">
+      <h2>Work with us, write for us, or just say hello.</h2>
+      <p>We're always open to thoughtful pitches, corrections, and conversations about the built environment. Reach out — we read every message.</p>
+      <a href="contact.html" class="cta-btn">Get in touch →</a>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color:#fff;">
+            <span class="logo-mark" aria-hidden="true">◈</span>
+            <span>Axis<span class="light" style="color:#a89f94;">Urban</span></span>
+          </a>
+          <p>An independent publication about interior design, architecture, and the built environment. Reader-supported since 2018.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Furniture</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS Feed</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Axis Urban Elements. All rights reserved.</span>
+        <span>Made with care for people who read.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== SCHEMA MARKUP ========== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Axis Urban Elements",
+    "description": "Axis Urban Elements is an independent editorial publication covering interior design, architecture, and the built environment.",
+    "url": "https://axisurbanelements.com/about.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Axis Urban Elements",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://axisurbanelements.com/logo.png"
+      }
+    }
+  }
+  </script>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      // --- Mobile menu toggle ---
+      const mobileToggle = document.getElementById('mobileToggle');
+      const navLinks = document.getElementById('navLinks');
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('open');
+      });
+
+      // --- Search toggle ---
+      const searchToggle = document.getElementById('searchToggle');
+      const searchBar = document.getElementById('searchBar');
+      const closeSearch = document.getElementById('closeSearch');
+      const searchInput = document.getElementById('searchInput');
+
+      searchToggle.addEventListener('click', function() {
+        searchBar.classList.toggle('open');
+        if (searchBar.classList.contains('open')) {
+          searchInput.focus();
+        }
+      });
+      closeSearch.addEventListener('click', function() {
+        searchBar.classList.remove('open');
+        searchInput.value = '';
+      });
+
+      // --- Smooth scroll for internal links ---
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          const targetEl = document.querySelector(targetId);
+          if (targetEl) {
+            e.preventDefault();
+            targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>

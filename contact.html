@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Contact — Axis Urban Elements</title>
+  <meta name="description" content="Get in touch with the editorial team at Axis Urban Elements. Story tips, feedback, partnership inquiries, and corrections.">
+  <meta name="author" content="Axis Urban Elements">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://axisurbanelements.com/contact.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact — Axis Urban Elements">
+  <meta property="og:description" content="Reach the editorial team at Axis Urban Elements. We welcome thoughtful feedback, story tips, and corrections.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://axisurbanelements.com/contact.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    :root {
+      --bg: #fcfaf7;
+      --surface: #ffffff;
+      --text-primary: #1e1e1e;
+      --text-secondary: #4a4a4a;
+      --text-muted: #6b6b6b;
+      --border: #e2ddd5;
+      --accent: #b85e3a;
+      --accent-light: #f4ede7;
+      --accent-hover: #9c4a2b;
+      --font-serif: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 1280px;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.03);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.05);
+      --radius: 8px;
+      --radius-lg: 16px;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    button, input, select, textarea {
+      font: inherit;
+    }
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4, h5 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+    h1 { font-size: 2.6rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.2rem; }
+    .text-sm { font-size: 0.875rem; }
+    .text-xs { font-size: 0.75rem; }
+    .text-muted { color: var(--text-muted); }
+    .text-secondary { color: var(--text-secondary); }
+    .uppercase { text-transform: uppercase; letter-spacing: 0.06em; }
+    .serif { font-family: var(--font-serif); }
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    /* ---------- HEADER ---------- */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: var(--font-serif);
+      font-size: 1.7rem;
+      letter-spacing: -0.02em;
+      line-height: 1;
+    }
+    .logo-mark {
+      width: 36px;
+      height: 36px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 400;
+    }
+    .logo span {
+      font-weight: 400;
+      color: var(--text-primary);
+    }
+    .logo .light {
+      font-weight: 300;
+      color: var(--text-muted);
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem 1.2rem;
+      align-items: center;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      padding: 0.25rem 0;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.15s, color 0.15s;
+      white-space: nowrap;
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--text-primary);
+      border-bottom-color: var(--accent);
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .search-btn {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 0.35rem 0.9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .search-btn:hover {
+      border-color: var(--accent);
+      color: var(--text-primary);
+    }
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.3rem 0.7rem;
+      cursor: pointer;
+      font-size: 1.2rem;
+      color: var(--text-primary);
+    }
+    @media (max-width: 900px) {
+      .header-inner {
+        padding: 0.8rem 1.2rem;
+      }
+      .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem 0 0.8rem;
+        gap: 0.4rem;
+        border-top: 1px solid var(--border);
+        margin-top: 0.5rem;
+      }
+      .nav-links.open {
+        display: flex;
+      }
+      .nav-links a {
+        font-size: 1rem;
+        padding: 0.3rem 0;
+      }
+      .mobile-toggle {
+        display: block;
+      }
+      .search-btn span {
+        display: none;
+      }
+      .search-btn {
+        padding: 0.35rem 0.7rem;
+      }
+    }
+    /* ---------- SEARCH BAR ---------- */
+    .search-bar {
+      display: none;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.5rem;
+    }
+    .search-bar.open {
+      display: block;
+    }
+    .search-bar-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      gap: 0.8rem;
+      align-items: center;
+    }
+    .search-bar input {
+      flex: 1;
+      padding: 0.8rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 40px;
+      background: var(--bg);
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .search-bar input:focus {
+      border-color: var(--accent);
+    }
+    .search-bar .close-search {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--text-muted);
+      line-height: 1;
+      padding: 0 0.3rem;
+    }
+
+    /* ---------- CONTACT HERO ---------- */
+    .contact-hero {
+      padding: 3.5rem 0 2rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+    .contact-hero h1 {
+      font-size: 3rem;
+      max-width: 720px;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .contact-hero p {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      max-width: 620px;
+      line-height: 1.7;
+    }
+    @media (max-width: 600px) {
+      .contact-hero h1 {
+        font-size: 2.1rem;
+      }
+      .contact-hero p {
+        font-size: 1rem;
+      }
+    }
+
+    /* ---------- CONTACT LAYOUT ---------- */
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      padding-bottom: 3rem;
+    }
+    @media (max-width: 820px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+
+    /* ---------- CONTACT INFO CARDS ---------- */
+    .contact-methods {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+    }
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.8rem;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .contact-card:hover {
+      border-color: #d5cec4;
+      box-shadow: var(--shadow-sm);
+    }
+    .contact-card-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--accent-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      color: var(--accent);
+      font-size: 1.3rem;
+    }
+    .contact-card h3 {
+      font-family: var(--font-sans);
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .contact-card p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin-bottom: 0.5rem;
+    }
+    .contact-card a {
+      color: var(--accent);
+      font-weight: 500;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+    .contact-card a:hover {
+      border-bottom-color: var(--accent);
+    }
+    .contact-card .email-large {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      word-break: break-all;
+    }
+    .contact-card .email-large:hover {
+      color: var(--accent);
+    }
+    .contact-note {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.6rem;
+      font-style: italic;
+    }
+
+    /* ---------- CONTACT FORM ---------- */
+    .contact-form-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2.2rem;
+    }
+    .contact-form-wrap h2 {
+      font-size: 1.6rem;
+      margin-bottom: 0.4rem;
+    }
+    .contact-form-wrap > p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1.8rem;
+    }
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-secondary);
+      margin-bottom: 0.4rem;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg);
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      outline: none;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(184, 94, 58, 0.08);
+    }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 130px;
+      line-height: 1.6;
+    }
+    .form-group select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b6b6b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-right: 2.5rem;
+      cursor: pointer;
+    }
+    .form-submit {
+      width: 100%;
+      padding: 0.9rem;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.15s;
+      margin-top: 0.5rem;
+    }
+    .form-submit:hover {
+      background: var(--accent-hover);
+    }
+    .form-submit:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+    .form-success {
+      display: none;
+      background: #e8f0e8;
+      border: 1px solid #b8ccb8;
+      border-radius: var(--radius);
+      padding: 1rem 1.2rem;
+      font-size: 0.9rem;
+      color: #2d4a2d;
+      margin-top: 1rem;
+    }
+    .form-success.show {
+      display: block;
+    }
+
+    /* ---------- OFFICES / MAP SECTION ---------- */
+    .offices-section {
+      padding: 2.5rem 0;
+      border-top: 1px solid var(--border);
+    }
+    .offices-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .offices-section > p {
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+      max-width: 640px;
+    }
+    .offices-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    @media (max-width: 700px) {
+      .offices-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .office-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+    }
+    .office-card h4 {
+      font-family: var(--font-sans);
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .office-card p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    /* ---------- FAQ SHORT ---------- */
+    .contact-faq {
+      padding: 2.5rem 0;
+      border-top: 1px solid var(--border);
+    }
+    .contact-faq h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem;
+    }
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 1rem 0;
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: var(--font-sans);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--text-primary);
+      transition: color 0.15s;
+    }
+    .faq-question:hover {
+      color: var(--accent);
+    }
+    .faq-question::after {
+      content: '+';
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: var(--text-muted);
+      transition: transform 0.2s;
+    }
+    .faq-question.active::after {
+      content: '−';
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s;
+      padding: 0 0;
+    }
+    .faq-answer.open {
+      max-height: 300px;
+      padding: 0 0 1rem;
+    }
+    .faq-answer p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      background: #1e1c1a;
+      color: #d9d2c8;
+      padding: 3rem 0 2rem;
+      margin-top: 2rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+    }
+    @media (max-width: 800px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width: 500px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    .footer-brand .logo {
+      color: #fff;
+      margin-bottom: 0.8rem;
+    }
+    .footer-brand p {
+      font-size: 0.85rem;
+      line-height: 1.7;
+      color: #a89f94;
+      max-width: 320px;
+    }
+    .footer-col h4 {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .footer-col a {
+      font-size: 0.85rem;
+      color: #a89f94;
+      transition: color 0.15s;
+    }
+    .footer-col a:hover {
+      color: #fff;
+    }
+    .footer-bottom {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #3a3734;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      font-size: 0.8rem;
+      color: #7a746c;
+    }
+
+    /* ---------- UTILS ---------- */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Axis Urban Elements home">
+        <span class="logo-mark" aria-hidden="true">◈</span>
+        <span>Axis<span class="light">Urban Elements</span></span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="search-btn" id="searchToggle" aria-label="Open search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span>Search</span>
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+    <div class="search-bar" id="searchBar">
+      <div class="search-bar-inner">
+        <input type="text" id="searchInput" placeholder="Search articles, topics, materials…" aria-label="Search articles">
+        <button class="close-search" id="closeSearch" aria-label="Close search">×</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ========== CONTACT HERO ========== -->
+    <section class="contact-hero">
+      <h1>Let’s talk about<br>spaces that matter.</h1>
+      <p>Whether you have a story tip, a correction, a partnership idea, or simply want to share feedback — we read every message. Reach the right desk directly, or use the form below.</p>
+    </section>
+
+    <!-- ========== CONTACT LAYOUT ========== -->
+    <div class="contact-layout">
+
+      <!-- LEFT: CONTACT METHODS -->
+      <div class="contact-methods">
+
+        <div class="contact-card">
+          <div class="contact-card-icon" aria-hidden="true">✉</div>
+          <h3>Editorial & Story Tips</h3>
+          <p>Pitches, corrections, and thoughtful feedback for our editorial team.</p>
+          <a href="mailto:editorial@axisurbanelements.com" class="email-large">editorial@axisurbanelements.com</a>
+          <p class="contact-note">We read every email, but cannot always reply individually.</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-icon" aria-hidden="true">◈</div>
+          <h3>Partnerships & Advertising</h3>
+          <p>For collaborations, sponsored content inquiries, and media kits.</p>
+          <a href="mailto:partners@axisurbanelements.com" class="email-large">partners@axisurbanelements.com</a>
+          <p class="contact-note">We do not accept sponsored articles. Advertising is clearly labeled.</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-icon" aria-hidden="true">⌂</div>
+          <h3>General Inquiries</h3>
+          <p>Anything else — press, permissions, or just to say hello.</p>
+          <a href="mailto:hello@axisurbanelements.com" class="email-large">hello@axisurbanelements.com</a>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: CONTACT FORM -->
+      <div class="contact-form-wrap">
+        <h2>Send a message</h2>
+        <p>Fields marked with * are required. We typically respond within 2–3 business days.</p>
+
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Your name *</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email address *</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Choose a topic…</option>
+              <option value="editorial">Editorial / story tip</option>
+              <option value="correction">Correction or update</option>
+              <option value="partnership">Partnership / advertising</option>
+              <option value="press">Press inquiry</option>
+              <option value="feedback">General feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" placeholder="Tell us what's on your mind…" required></textarea>
+          </div>
+
+          <button type="submit" class="form-submit" id="submitBtn">Send message</button>
+          <div class="form-success" id="formSuccess">
+            Thank you — your message has been received. We’ll get back to you soon.
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- ========== OFFICES ========== -->
+    <section class="offices-section">
+      <h2>Our Desks</h2>
+      <p>Axis Urban Elements is a remote-first publication with contributing editors in three cities. We don’t host walk-in visitors, but you can reach each desk by email.</p>
+
+      <div class="offices-grid">
+        <div class="office-card">
+          <h4>London</h4>
+          <p>Editorial headquarters<br>12 Clerkenwell Road<br>London EC1M 5PQ<br>United Kingdom</p>
+        </div>
+        <div class="office-card">
+          <h4>Milan</h4>
+          <p>Design & materials desk<br>Via Tortona 31<br>20144 Milano MI<br>Italy</p>
+        </div>
+        <div class="office-card">
+          <h4>New York</h4>
+          <p>North America desk<br>87 Lafayette Street<br>New York, NY 10013<br>United States</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT FAQ ========== -->
+    <section class="contact-faq">
+      <h2>Before you write</h2>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Do you accept guest posts or sponsored articles?</button>
+        <div class="faq-answer"><p>We do not accept guest posts, sponsored articles, or paid link insertions. Our editorial content is independent and reader-supported. We do accept clearly labeled display advertising — contact partners@axisurbanelements.com for details.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">How do I submit a correction?</button>
+        <div class="faq-answer"><p>Email editorial@axisurbanelements.com with the subject line “Correction” and include the article URL, the specific error, and any supporting sources. We review all correction requests and update articles where warranted.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Can I republish an Axis Urban Elements article?</button>
+        <div class="faq-answer"><p>Short excerpts (up to 150 words) with a clear link back to the original article are welcome. Full reproduction requires written permission. Email hello@axisurbanelements.com with details of your request.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">How long does it take to get a reply?</button>
+        <div class="faq-answer"><p>We aim to respond within 2–3 business days. Due to the volume of messages, we cannot always reply to every email — but we do read them all.</p></div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color:#fff;">
+            <span class="logo-mark" aria-hidden="true">◈</span>
+            <span>Axis<span class="light" style="color:#a89f94;">Urban</span></span>
+          </a>
+          <p>An independent publication about interior design, architecture, and the built environment. Reader-supported since 2018.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="index.html">Interior Design</a></li>
+            <li><a href="index.html">Architecture</a></li>
+            <li><a href="index.html">Materials</a></li>
+            <li><a href="index.html">Lighting</a></li>
+            <li><a href="index.html">Furniture</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">RSS Feed</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Axis Urban Elements. All rights reserved.</span>
+        <span>Made with care for people who read.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== SCHEMA MARKUP ========== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact — Axis Urban Elements",
+    "description": "Contact the editorial team at Axis Urban Elements for story tips, corrections, partnerships, and general inquiries.",
+    "url": "https://axisurbanelements.com/contact.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Axis Urban Elements",
+      "email": "editorial@axisurbanelements.com",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "editorial",
+          "email": "editorial@axisurbanelements.com"
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "partnerships",
+          "email": "partners@axisurbanelements.com"
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      // --- Mobile menu toggle ---
+      const mobileToggle = document.getElementById('mobileToggle');
+      const navLinks = document.getElementById('navLinks');
+      mobileToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('open');
+      });
+
+      // --- Search toggle ---
+      const searchToggle = document.getElementById('searchToggle');
+      const searchBar = document.getElementById('searchBar');
+      const closeSearch = document.getElementById('closeSearch');
+      const searchInput = document.getElementById('searchInput');
+
+      searchToggle.addEventListener('click', function() {
+        searchBar.classList.toggle('open');
+        if (searchBar.classList.contains('open')) {
+          searchInput.focus();
+        }
+      });
+      closeSearch.addEventListener('click', function() {
+        searchBar.classList.remove('open');
+        searchInput.value = '';
+      });
+
+      // --- FAQ accordion ---
+      const faqQuestions = document.querySelectorAll('.faq-question');
+      faqQuestions.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const answer = this.nextElementSibling;
+          const isOpen = answer.classList.contains('open');
+          document.querySelectorAll('.faq-answer.open').forEach(a => {
+            a.classList.remove('open');
+            a.previousElementSibling.classList.remove('active');
+            a.previousElementSibling.setAttribute('aria-expanded', 'false');
+          });
+          if (!isOpen) {
+            answer.classList.add('open');
+            this.classList.add('active');
+            this.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      // --- Contact form handling ---
+      const contactForm = document.getElementById('contactForm');
+      const submitBtn = document.getElementById('submitBtn');
+      const formSuccess = document.getElementById('formSuccess');
+
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Basic validation
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value.trim();
+
+        if (!name || !email || !subject || !message) {
+          alert('Please fill in all required fields.');
+          return;
+        }
+
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          alert('Please enter a valid email address.');
+          return;
+        }
+
+        // Simulate submission
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending…';
+
+        setTimeout(() => {
+          submitBtn.textContent = 'Send message';
+          submitBtn.disabled = false;
+          formSuccess.classList.add('show');
+          contactForm.reset();
+
+          // Hide success after 6 seconds
+          setTimeout(() => {
+            formSuccess.classList.remove('show');
+          }, 6000);
+        }, 900);
+      });
+
+      // --- Smooth scroll for internal links ---
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          const targetEl = document.querySelector(targetId);
+          if (targetEl) {
+            e.preventDefault();
+            targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
